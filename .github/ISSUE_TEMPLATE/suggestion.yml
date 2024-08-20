@@ -1,0 +1,53 @@
+name: Suggestion d'amélioration
+description: Proposez une suggestion d'amélioration ou une nouvelle fonctionnalité pour le launcher.
+title: "[SUGGESTION] "
+labels: 
+  - suggestion
+  - enhancement
+  - new
+assignees: []
+
+body:
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: "J'ai bien vérifié si cette suggestion a déjà été faite"
+          required: true
+    validations:
+      required: true
+  - type: input
+    id: discord
+    attributes:
+      label: Pseudo discord
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion-details
+    attributes:
+      label: Détails de la suggestion
+      description: Décrivez votre suggestion de manière claire et concise.
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Avantages de la suggestion
+      description: Expliquez comment cette suggestion améliorerait l'expérience utilisateur ou le fonctionnement du launcher.
+    validations:
+      required: true
+  - type: textarea
+    id: potential-issues
+    attributes:
+      label: Problèmes potentiels
+      description: Identifiez les problèmes ou défis potentiels associés à la mise en œuvre de cette suggestion, le cas échéant.
+    validations:
+      required: false
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Informations supplémentaires
+      description: Ajoutez ici tout autre contexte ou idée relative à la suggestion.
+    validations:
+      required: false
