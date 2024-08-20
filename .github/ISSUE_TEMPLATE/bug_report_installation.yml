@@ -1,9 +1,10 @@
-name: Report de bug
-description: Report un bug du serveur
+name: 'Bug d''installation'
+description: 'Report un bug d''installation'
 title: "[BUG] "
 labels: 
-  - Bug
-  - Nouveau
+  - bug
+  - installation
+  - new
 assignees: []
 
 body:
@@ -14,12 +15,6 @@ body:
       options:
         - label: "J'ai bien vérifié si le bug a déjà été report"
           required: true
-        - label: "Le bug que je report n'est pas un bug de duplication (discord ticket pour cela)"
-          required: true
-  - type: input
-    id: pseudo
-    attributes:
-      label: Pseudo en jeu
     validations:
       required: true
   - type: input
@@ -49,19 +44,6 @@ body:
       description: 'Une description claire et concise de ce que ça doit faire si ce n''était pas un bug.'
     validations:
       required: true
-  - type: input
-    id: date
-    attributes:
-      label: Date et heure de la production du bug
-    validations:
-      required: true
-  - type: input
-    id: server
-    validations:
-      required: true
-    attributes:
-      label: Serveur
-      description: Sur quel serveur est-ce arrivé ?
   - type: textarea
     id: video-screen
     attributes:
