@@ -1,8 +1,9 @@
-name: Report de bug
-description: Report un bug du serveur
+name: Bug visuel
+description: Report un bug visuel du launcher
 title: "[BUG] "
 labels: 
   - bug
+  - visual
   - new
 assignees: []
 
@@ -14,28 +15,6 @@ body:
       options:
         - label: "J'ai bien vérifié si le bug a déjà été report"
           required: true
-  - type: dropdown
-    id: bug-type
-    attributes:
-      label: Type de bug
-      description: Sélectionnez le type de bug rencontré.
-      options:
-        - label: "Bug visuel"
-          value: "visual"
-        - label: "Bug de gameplay"
-          value: "gameplay"
-        - label: "Bug d'installation"
-          value: "installation"
-        - label: "Bug de performance"
-          value: "performance"
-        - label: "Autre"
-          value: "other"
-    validations:
-      required: true
-  - type: input
-    id: pseudo
-    attributes:
-      label: Pseudo en jeu
     validations:
       required: true
   - type: input
